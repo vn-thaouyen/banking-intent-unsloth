@@ -49,11 +49,11 @@ cd banking-intent-unsloth
 pip install -r requirements.txt
 ```
 
-## 2. Download Model and Dataset
+### 2. Download Model and Dataset
 
 The pipeline is designed to automatically download the base model from Hugging Face and load the train dataset from sampla_data/train.csv.
 
-## 3. Train the Model
+### 3. Train the Model
 
 The training process uses LoRA adapters to fine-tune the Llama 3.1 8B model. All hyperparameters (model name, lora, training arguments, model output directory, etc.) can be modified in `configs/train.yaml`.
 
@@ -64,7 +64,7 @@ chmod +x train.sh
 ./train.sh
 ```
 
-## 4. Run Model (Inference & Evaluation)
+### 4. Run Model (Inference & Evaluation)
 
 Once the model is trained, you can run the inference script. This script performs two tasks:
 
